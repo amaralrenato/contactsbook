@@ -1,0 +1,41 @@
+<div class="container my-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-header bg-light text-center">
+                    <h4>Contacts Book</h4>
+                </div>
+                <div class="card-body">
+
+                    <p class="text-center">Inform your access credentiais:</p>
+                    <hr/>
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputEmail" class="form-label">Email access:</label>
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPassword" class="form-label">Password access:</label>
+                            <input type="password" class="form-control" id="inputPassword">
+                            <div class="text-end">
+                                <a [routerLink]="['/forgot-my-password']">
+                                    Forgot my password?
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-grid mb-2">
+                            <button type="submit" class="btn btn-primary btn-sm">Enter in Book</button>
+                        </div>
+                    </form>
+
+                    <div class="d-grid">
+                        <a class="btn btn-success btn-sm" [routerLink]="['/create-account']">
+                            Create user account
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
